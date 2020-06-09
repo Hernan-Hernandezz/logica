@@ -31,6 +31,4 @@ def raiz(operacion,objetivo):
 	else:
 		print('error')
 
-raiz(1,16)
-raiz(2,16)
-raiz(3,16)
+raiz(int(input('elige operacion \n1.enumeracion exaustiva\n2.busqueda binaria\n')),int(input('elige un numero\n')))
