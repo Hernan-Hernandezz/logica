@@ -12,7 +12,6 @@ def raiz(operacion,objetivo):
         		print(f'no se encontro raiz cuadrada de {objetivo}')
 		else :
         		print(f'la raiz cuadrada de {objetivo} es {respuesta}')
-		print('operacion 1')
 	elif operacion == 2:
 #busqueda binaria
 		objetivo = objetivo
@@ -27,11 +26,10 @@ def raiz(operacion,objetivo):
                 		alto = respuesta
         		respuesta = (alto+bajo) / 2
 		print(f'la raiz cuadrada de {objetivo} es {respuesta}')
-		print('operacion 2')
 	elif operacion != 1 or operacion != 2:
 		print('error no existe operacion')
 		raiz(int(input('elige operacion con los numeros \n1.enumeracion exaustiva\n2.busqueda binaria\n')),int(input('elige un numero\n')))
-calcular_raiz = input('desea calcular raiz?\nsi\nno\n')
+calcular_raiz ='si'
 while calcular_raiz == 'si' or calcular_raiz =='SI' or calcular_raiz == 'Si' or calcular_raiz == 'sI' :
 	raiz(int(input('elige operacion con los numeros \n1.enumeracion exaustiva\n2.busqueda binaria\n')),int(input('elige un numero\n')))
-	calcular_raiz=input('desea calcular raiz?\nsi\nno\n')
+	calcular_raiz=input('quieres calcular otra raiz?\nsi\nno\n')
