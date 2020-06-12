@@ -1,6 +1,6 @@
 def raiz(operacion,objetivo):
 	if operacion == 1:
-#enumeracion exaustiva
+#enumeracion exhaustiva
 		objetivo = objetivo
 		epsilon = 0.01
 		paso = epsilon**2
@@ -28,8 +28,8 @@ def raiz(operacion,objetivo):
 		print(f'la raiz cuadrada de {objetivo} es {respuesta}')
 	elif operacion != 1 or operacion != 2:
 		print('error no existe operacion')
-		raiz(int(input('elige operacion con los numeros \n1.enumeracion exaustiva\n2.busqueda binaria\n')),int(input('elige un numero\n')))
+		raiz(int(input('elige operacion con los numeros \n1.enumeracion exhaustiva\n2.busqueda binaria\n')),int(input('elige un numero\n')))
 calcular_raiz ='si'
 while calcular_raiz == 'si' or calcular_raiz =='SI' or calcular_raiz == 'Si' or calcular_raiz == 'sI' :
-	raiz(int(input('elige operacion con los numeros \n1.enumeracion exaustiva\n2.busqueda binaria\n')),int(input('elige un numero\n')))
+	raiz(int(input('elige operacion con los numeros \n1.enumeracion exhaustiva\n2.busqueda binaria\n')),int(input('elige un numero\n')))
 	calcular_raiz=input('quieres calcular otra raiz?\nsi\nno\n')
