@@ -29,7 +29,8 @@ def raiz(operacion,objetivo):
 	elif operacion != 1 or operacion != 2:
 		print('error no existe operacion')
 		raiz(int(input('elige operacion con los numeros \n1.enumeracion exhaustiva\n2.busqueda binaria\n')),int(input('elige un numero\n')))
+afirmaciones =('si','Si','sI','SI')
 calcular_raiz ='si'
-while calcular_raiz == 'si' or calcular_raiz =='SI' or calcular_raiz == 'Si' or calcular_raiz == 'sI' :
+while calcular_raiz in afirmaciones :
 	raiz(int(input('elige operacion con los numeros \n1.enumeracion exhaustiva\n2.busqueda binaria\n')),int(input('elige un numero\n')))
 	calcular_raiz=input('quieres calcular otra raiz?\nsi\nno\n')
